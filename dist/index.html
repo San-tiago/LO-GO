@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LO-GO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body class="overflow-x-hidden">
+    <header class="h-screen w-full relative flex justify-center">
+        <div class="container absolute z-20 flex justify-between py-3">
+            <div>
+                <h3 class="text-gray-700 font-bold text-2xl">LO-GO</h3>
+            </div>
+            <div class="hidden md:flex space-x-16 text-xs items-center text-gray-500">
+                <a href="" class="hover:font-bold">All</a>
+                <a href="" class="hover:font-bold">Men</a>
+                <a href="" class="hover:font-bold">Women</a>
+                <a href="" class="hover:font-bold">Kids</a>
+            </div>
+            <div class="hidden md:flex space-x-16 text-xs items-center text-gray-500">
+                <a href="">Log-in</a>
+                <a href="">Sign-up</a>
+            </div>
+            <div class="flex items-center md:hidden">
+                <button class="mobile-menu-button">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="absolute z-30 mt-64 italic tracking-widest text-white text-9xl font-light">
+            <h1>LO-GO</h1>
+        </div>
+        <div class="max-w-full lg:container mx-auto h-4/5 md:h-5/6 absolute inset-0 z-20 mt-16 bg-black opacity-50">
+
+        </div>
+        <div class="max-w-full lg:container mx-auto h-4/5  md:h-5/6 absolute inset-0 z-10 mt-16">
+            <video src="../vid/pexels-cottonbro-5310858.mp4" type="video/mp4" autoplay muted loop class="opacity-80 object-cover w-full h-full" ></video>
+           
+        </div>
+    </header>
+
+    
+
+    <div class="container mx-auto grid-cols-3 lg:grid grid-cols-4">
+
+    <!-- SIDE NAV -->    
+        <div class="hidden col-span-0 lg:block col-span-1 px-10 py-8">
+            <div class="my-2">
+                <h3 class="text-gray-600 font-medium py-5">GENDER</h3>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">All</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700 font-bold"><a href="" class="mr-5">Men</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Women</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Bi-sex</a><input type="checkbox"></div>
+            </div> 
+            <div class="my-2">
+                <h3 class="text-gray-600 font-medium py-5">CATEGORIES</h3>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">All</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Clothes</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Shorts</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Accessories</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Bags</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700 font-bold"><a href="" class="mr-5">Shoes</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Glasses</a><input type="checkbox"></div>
+            </div> 
+            <div class="my-2">
+                <h3 class="text-gray-600 font-medium py-5">SIZE</h3>
+                <div class="grid grid-cols-3 grid-rows-2">
+                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">XS</span></div>
+                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">SM</span></div>
+                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">M</span></div>
+                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">LG</span></div>
+                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">XL</span></div>
+                </div>
+            </div> 
+        </div>
+
+    <!-- SIDE NAV END -->    
+
+    <!-- PRODUCTS -->
+
+        <div class="container px-0 lg:col-span-3 px-2">
+            <div class="container border-b-2 pb-6">
+                <div class="container flex flex-col md:flex-row">
+                    <div class="mx-auto text-gray-600 text-xl my-2 md:my-0"><h1>Products</h1></div>
+                    <div class="mx-auto flex space-x-10 text-xs text-gray-600 my-2 md:items-center my-0">
+                        <div class="lg:hidden"><span class="text-xs">GENDER</span>
+                            <select name="" id="">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class="lg:hidden"><span>CATEGORIES</span>
+                            <select name="" id="">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class="lg:hidden"><span>SIZE</span>
+                            <select name="" id="">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class=" hidden lg:flex"><span>Filter by Price</span>
+                            <select name="" id="">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class=" hidden lg:flex"><span>Filter by lorem</span>
+                            <select name="" id="">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class=" hidden lg:flex"><span>Filter by lorem</span>
+                            <select name="" id="">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                     
+                    </div>
+                    <div class="flex mx-auto my-2 md:my-0">
+                        <input type="text" name="" id="" class="border border-gray-600 text-gray-600 text-xs p-1 focus:outline-none" placeholder="Search ..."><div class="bg-black flex justify-center items-center w-8">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M16.2595 15.989L12.895 12.6185L16.2595 15.989ZM14.7595 8.11401C14.7595 9.80477 14.0879 11.4263 12.8923 12.6218C11.6968 13.8174 10.0753 14.489 8.38452 14.489C6.69377 14.489 5.07226 13.8174 3.87672 12.6218C2.68117 11.4263 2.00952 9.80477 2.00952 8.11401C2.00952 6.42326 2.68117 4.80175 3.87672 3.60621C5.07226 2.41066 6.69377 1.73901 8.38452 1.73901C10.0753 1.73901 11.6968 2.41066 12.8923 3.60621C14.0879 4.80175 14.7595 6.42326 14.7595 8.11401V8.11401Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="18" height="18" fill="white" transform="translate(0.509521 0.239014)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </div>
+                    </div>  
+                    
+               
+                </div>         
+            </div>
+
+            <!-- EACH PRODUCT -->    
+
+            <div class=" flex flex-col">
+                <!-- SHOES -->
+                <div class="slider owl-carousel">
+                     <div class="bg-gray-100 mx-auto w-9/12 h-full mt-20">
+                        <img src="../dist/img/revolution-5-running-shoe-8P3bh3.png" alt="" class="w-full object-cover">
+                        <div class="flex justify-between p-7 bg-white">
+                            <div class="flex flex-col w-full">
+                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
+                                    <p class="text-sm font-bold text-xs">$10</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-plus text-black text-2xl "></i>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-gray-100 mx-auto w-9/12 h-full mt-20">
+                        <img src="../dist/img/34f361b17de849262477dfbc4a5d8407.png" alt="" class="w-full object-cover">
+                        <div class="flex justify-between p-7 bg-white"">
+                            <div class="flex flex-col w-full">
+                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
+                                    <p class="text-sm font-bold text-xs">$10</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-plus text-black text-2xl "></i>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-gray-100 mx-auto w-9/12 h-full mt-20">
+                        <img src="../dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full object-cover">
+                        <div class="flex justify-between p-7 bg-white"">
+                            <div class="flex flex-col w-full">
+                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
+                                    <p class="text-sm font-bold text-xs">$10</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-plus text-black text-2xl "></i>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-gray-100 mx-auto w-9/12 h-full mt-20">
+                        <img src="../dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full object-cover">
+                        <div class="flex justify-between p-7 bg-white"">
+                            <div class="flex flex-col w-full">
+                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
+                                    <p class="text-sm font-bold text-xs">$10</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-plus text-black text-2xl "></i>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-gray-100 mx-auto w-9/12 h-full mt-20">
+                        <img src="../dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full object-cover">
+                        <div class="flex justify-between p-7 bg-white"">
+                            <div class="flex flex-col w-full">
+                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
+                                    <p class="text-sm font-bold text-xs">$10</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-plus text-black text-2xl "></i>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+                <!-- END SHOES -->
+
+                <!-- CLOTHES -->
+                <div class="slider owl-carousel">
+                     <div class="bg-gray-100 mx-auto w-9/12 h-full mt-20">
+                        <img src="../dist/img/1496365369-elslogo-nobg-shirtpocket_1-final2-blank-gildan-2000-3x1-mockup_M_mockup_Front_Wrinkled_Cranberry.png" alt="" class="w-full object-cover">
+                        <div class="flex justify-between p-7 bg-white">
+                            <div class="flex flex-col w-full">
+                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
+                                    <p class="text-sm font-bold text-xs">$10</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-plus text-black text-2xl "></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- END SHOES -->
+
+                
+             <!-- EACH PRODUCT -->     
+        </div>
+    
+    <!-- PRODUCTS END -->
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('button.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+    
+        btn.addEventListener("click",()=>{
+            menu.classList.toggle("hidden");
+        })
+    </script>
+    <script>
+        $(".slider").owlCarousel({
+            dots:true,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                },
+            }
+        })
+    </script>
+</body>
+</html>
