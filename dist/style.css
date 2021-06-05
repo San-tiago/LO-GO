@@ -586,8 +586,11 @@ video {
 }
 
 .horizontal {
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: auto;
+}
+
+.primary{
+  background-color: #353535;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

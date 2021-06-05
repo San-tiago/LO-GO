@@ -6,4 +6,11 @@
     .horizontal {
         overflow: auto;
     }
+    .primary{
+        background-color: rgb(53, 53, 53); 
+    }
+    .text-primary{
+        color: rgb(53, 53, 53); 
+
+    }
 }
