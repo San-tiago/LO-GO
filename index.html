@@ -13,9 +13,9 @@
 </head>
 <body class="overflow-x-hidden">
     <header class="h-screen w-full relative flex justify-center">
-        <div class="container absolute z-20 flex justify-between py-3">
+        <div class="px-10 fixed w-full z-40 flex justify-between py-3 bg-white">
             <div>
-                <h3 class="text-gray-700 font-bold text-2xl">LO-GO</h3>
+                <h3 class="text-gray-700 font-bold text-2xl">LO-<span class="text-blue-500">GO</span></h3>
             </div>
             <div class="hidden md:flex space-x-16 text-xs items-center text-gray-500">
                 <a href="" class="border-b-2 border-gray-600 py-1">Home</a>
@@ -35,14 +35,21 @@
                 </button>
             </div>
         </div>
+        <div class="mobile-menu py-5 fixed z-30 w-full hidden mt-10 mx-auto fixed w-full md:hidden bg-white px-12 flex flex-col text-sm text-gray-600 font-normal">
+            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Home</a>
+            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Shop</a>
+            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Contact</a>
+            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Cart</a>
+            
+        </div>
         <div class="absolute z-30 mt-64 italic tracking-widest text-white text-9xl font-light">
-            <h1>LO-GO</h1>
+            <h1 class="font-bold ">LO-<span class="text-blue-500">GO</span></h1>
         </div>
         <div class="max-w-full lg:container mx-auto h-4/5 md:h-5/6 absolute inset-0 z-20 mt-16 bg-black opacity-50">
 
         </div>
         <div class="max-w-full lg:container mx-auto h-4/5  md:h-5/6 absolute inset-0 z-10 mt-16">
-            <video src="./vid/pexels-cottonbro-5310858.mp4" type="video/mp4" autoplay muted loop class="opacity-80 object-cover w-full h-full" ></video>
+            <video src="./vid/pexels-cottonbro-5310933.mp4" type="video/mp4" autoplay muted loop class="opacity-80 object-cover w-full h-full" ></video>
            
         </div>
     </header>
@@ -292,6 +299,18 @@
                        </div>
                    </div>
                </div>
+               <div class="my-10 flex justify-center items-center space-x-10">
+                   <div><a href="" class="w-6 h-5 text-black flex justify-center items-center"><i class="fas fa-caret-left"></i></a></div>
+                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">1</a></div>
+                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">2</a></div>
+                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">3</a></div>
+                   <div><a href="" class="primary w-6 h-5 text-white flex justify-center items-center">4</a></div>
+                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">5</a></div>
+                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">6</a></div>
+                   <div><a href="" class="w-6 h-5 text-black flex justify-center items-center">7</a></div>
+                   <div><a href="" class="w-6 h-5 text-black flex justify-center items-center"><i class="fas fa-caret-right"></i></a></div>
+
+               </div>
                 
              <!-- EACH PRODUCT -->     
         </div>
@@ -299,6 +318,57 @@
     <!-- PRODUCTS END -->
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <div class="py-20 primary max-w-full h-auto flex md:flex flex-col lg:grid grid-cols-4 mt-56 lg:py-10">
+        <div class="text-center md:col-span-2 flex justify-center items-center lg:col-span-1">
+            <h1 class="text-white text-5xl font-bold">LO-<span class="text-blue-500">GO</span></h1>
+        </div>
+
+        <div class="container flex flex-col pl-14 mt-10 md:flex-row mx-auto justify-around lg:col-span-3"><!-- c lg:col-span-3 -->
+            <div class="text-white font-light my-5 md:my-0 lg:pl-5">
+                <h1 class="font-normal text-xl my-3">Contacts</h1>
+                <div class="py-2 space-x-1">           
+                    <i class="fab fa-google h-6 w-6"></i><span class="text-sm">lo-go@gmail.com</span>
+                </div>
+                <div class="py-2 space-x-1">           
+                    <i class="fas fa-phone h-6 w-6"></i><span class="text-sm">099999999</span>
+                </div>
+                <div class="py-2 space-x-1 ">           
+                    <i class="fas fa-map-marker-alt h-6 w-6"></i><span class="text-sm">Batangas City</span>
+                </div>
+            </div>
+            <div class="text-white font-light my-5 md:my-0 ">
+                <h1 class="font-normal text-xl my-3">Categories</h1>
+                <div class="grid grid-cols-3 gap-3 text-xs mt-5 text-left w-50">
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Kids</a>
+                    <a href="">Bags</a>
+                    <a href="">Clothes</a>
+                    <a href="">Shorts</a>
+                    <a href="">Eyeglass</a>
+                    <a href="">Shoes</a>
+                </div>  
+            </div>
+            <div class="text-white font-light my-5 md:my-0 ">
+                <h1 class="font-normal text-xl my-3">Social Medias</h1>
+                <div class="grid grid-cols-3 gap-1 md:gap-3 text-xs mt-5 text-left w-50">
+                    <i class="fab fa-facebook text-2xl mr-3 "></i>
+                    <i class="fab fa-instagram text-2xl mr-3"></i>
+                    <i class="fab fa-twitter text-2xl "></i>
+                </div>  
+            </div>
+          <!--   <div class="text-white text-left">
+                <h1 class="font-normal text-xl my-4 lg:my-0">Social Medias</h1>
+                <i class="fab fa-facebook text-2xl mr-3 "></i>
+                <i class="fab fa-instagram text-2xl mr-3"></i>
+                <i class="fab fa-twitter text-2xl "></i>
+            </div> -->
+        </div>
+    </div>
+    <!-- FOOTER -->
+
     <script>
         const btn = document.querySelector('button.mobile-menu-button');
         const menu = document.querySelector('.mobile-menu');
