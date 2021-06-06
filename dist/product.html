@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body class="relative overflow-x-hidden">
-        <div class="container mx-auto z-20 flex justify-between py-3 px-4 bg-white">
+        <div class="max-w-full mx-auto z-20 flex justify-between py-3 px-4 bg-white">
             <div class="flex flex-row justify-center items-center space-x-7">
                 <a href="../index.html"><i class="fas fa-arrow-left text-gray-700"></i></a>
                 <h3 class="text-gray-700 font-bold text-2xl">LO-GO</h3>
@@ -32,12 +32,20 @@
             </div>
         </div>
         
+        <div class="mobile-menu py-5 fixed z-40 w-full hidden mx-auto fixed w-full md:hidden bg-white px-12 flex flex-col text-sm text-gray-600 font-normal">
+            <a href="" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold">All</a>
+            <a href="" class="py-3 px-2  hover:bg-red-400 hover:text-white hover:font-bold">Men</a>
+            <a href="" class="py-3 px-2  hover:bg-red-400 hover:text-white hover:font-bold">Women</a>
+            <a href="" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold">Kids</a>
+            <a href="" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold">Log-in</a>
+            <a href="" class="my-5 border border-red-400 rounded-3xl px-3 py-2 hover:bg-red-400 hover:text-white hover:font-bold w-20">Sign-up</a>
+        </div>
         
  
 
-    <div class="container mx-auto grid grid-cols-3">
-        <div class="col-span-2 p-10">
-           <div class="container bg-gray-100 w-full h-auto">
+    <div class="max-w-full mx-auto xs:flex flex-col md:grid grid-cols-4 lg:px-14 my-20">
+        <div class="max-w-full px-5 md:col-span-2 md:px-5 lg:p-10">
+           <div class="max-w-full bg-gray-100 w-full h-auto">
             <img src="../dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full h-full object-cover ">
            </div>
 
@@ -51,10 +59,10 @@
           </div>
 
         </div>
-        <div class="py-10 px-4">
-            <div class="pb-20 border-b-2 border-gray-300">
-                <h1 class="text-black text-4xl font-medium">AXD123</h1>
-                <p class="text-sm text-gray-500 leading-5 my-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores consequuntur dolorem magni accusamus deserunt itaque quam iure animi quia.</p>
+        <div class="py-10 px-4 sm:px-20 md:col-span-2 md:px-5 lg:px-10">
+            <div class="pb-20 border-b-2 border-gray-300 md:col-span-2">
+                <h1 class="text-primary text-4xl font-medium">AXD123</h1>
+                <p class="text-sm text-secondary leading-5 my-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores consequuntur dolorem magni accusamus deserunt itaque quam iure animi quia.</p>
                 
                 <!-- SIZE -->
                 <div class="w-1/2 py-4">
@@ -62,7 +70,7 @@
                     <div class="grid grid-cols-3 grid-rows-2 text-xs text-gray-600 py-4 gap-3">
                         <div class="bg-white w-6 h-5 text-gray-600 flex justify-center items-center">33</div>
                         <div class="bg-white w-6 h-5 text-gray-600 flex justify-center items-center">34</div>
-                        <div class="primary w-6 h-5 text-white flex justify-center items-center">45</div>
+                        <div class="bg-primary w-6 h-5 text-white flex justify-center items-center">45</div>
                         <div class="bg-white w-6 h-5 text-gray-600 flex justify-center items-center">36</div>
                         <div class="bg-white w-6 h-5 text-gray-600 flex justify-center items-center">37</div>
                         <div class="bg-white w-6 h-5 text-gray-600 flex justify-center items-center">40</div>
@@ -84,7 +92,7 @@
             </div>
 
             <!-- CHECKOUT -->
-            <div class="py-20">
+            <div class="mt-20 md:col-span-1 ">
                 <h1 class=" text-black font-medium opacity-80 text-lg">Check-out</h1>
                 <p class="text-sm text-gray-500 leading-5 my-5 font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dicta sunt. Velit iusto rerum enim optio sit odio tempora non.</p>
                 <div class="w-1/2 py-4">
@@ -99,20 +107,30 @@
                 <div class="py-4">
                     <h1  class="text-gray-600 font-medium py-3">Deliver Address</h1>
                     <div class="">
-                        <div class="space-x-5 flex justify-between pr-10"><label for="" class="text-xs text-gray-700 font-medium">Address :</label><input type="text" class="border w-64 border-gray-300 outline-none text-sm text-gray-600"></div>
+                        <div class="flex justify-between xs:flex flex-col">
+                            <label for="" class="text-xs text-gray-700 font-medium my-2">Address :</label>
+                            <input type="text" class="border w-64 border-gray-300 outline-none text-sm text-gray-600">
+                        </div>
                     </div>
-                    <div class="my-4">
-                        <div class="space-x-5 flex justify-between pr-10"><label for="" class="text-xs text-gray-700 font-medium">City :</label><input type="text" class="border w-64 border-gray-300 outline-none text-sm text-gray-600"></div>
+                    <div class="">
+                        <div class="flex justify-between xs:flex flex-col">
+                            <label for="" class="text-xs text-gray-700 font-medium my-2">Region :</label>
+                            <input type="text" class="border w-64 border-gray-300 outline-none text-sm text-gray-600">
+                        </div>
                     </div>
-                    <div class="my-4">
-                        <div class="space-x-5 flex justify-between pr-10"><label for="" class="text-xs text-gray-700 font-medium">Region :</label><input type="text" class="border w-64 border-gray-300 outline-none text-sm text-gray-600"></div>
+                    <div class="max-w-full">
+                        <div class="flex justify-between xs:flex flex-col">
+                            <label for="" class="text-xs text-gray-700 font-medium my-2">City :</label>
+                            <input type="text" class="border w-64 border-gray-300 outline-none text-sm text-gray-600">
+                        </div>
                     </div>
+        
 
                     <div class="my-10">
                         <div class="space-x-5 flex justify-between pr-10 py-2"><label for="" class="text-xs text-gray-700 font-medium">Price</label><p class="text-gray-700 text-sm font-medium">$60</p></div>
                         <div class="space-x-5 flex justify-between pr-10 py-2"><label for="" class="text-xs text-gray-700 font-medium">Delivery Fee</label><p class="text-gray-700 text-sm font-medium">$20</p></div>
                         <div class="space-x-5 flex justify-between pr-10 py-2"><label for="" class="text-xs text-gray-700 font-bold">Total</label><p class="text-gray-700 text-sm font-bold">$80</p></div>
-                        <button class="w-full primary my-2 text-center text-white tracking-widest font-medium py-2 focus:outline-none hover:bg-black">CHECKOUT</button>
+                        <button class="w-full bg-primary my-2 text-center text-white tracking-widest font-medium py-2 focus:outline-none hover:bg-black">CHECKOUT</button>
                     </div>
                 </div>
                 <!--  -->
@@ -123,54 +141,99 @@
 
 
 
-     <!-- FOOTER -->
-     <div class="py-20 primary max-w-full h-auto flex md:flex flex-col lg:grid grid-cols-4 mt-56">
-        <div class="text-center md:col-span-2 flex justify-center items-center lg:col-span-1">
-            <h1 class="text-white text-5xl font-bold">LO-<span class="text-blue-500">GO</span></h1>
-        </div>
+  <!-- FOOTER -->
+  <div class="py-20 bg-primary max-w-full h-auto flex md:flex flex-col lg:grid grid-cols-4 mt-56 lg:py-10">
+    <div class="text-center md:col-span-2 flex justify-center items-center lg:col-span-1">
+        <h1 class="text-white text-5xl font-bold">LO-<span class="text-red-400">GO</span></h1>
+    </div>
 
-        <div class="container flex flex-col pl-14 mt-10 md:flex-row mx-auto justify-around lg:col-span-3"><!-- c lg:col-span-3 -->
-            <div class="text-white font-light lg:pl-5">
-                <h1 class="font-normal text-xl my-3">Contacts</h1>
-                <div class="py-2 space-x-1">           
-                    <i class="fab fa-google h-6 w-6"></i><span class="text-sm">lo-go@gmail.com</span>
-                </div>
-                <div class="py-2 space-x-1">           
-                    <i class="fas fa-phone h-6 w-6"></i><span class="text-sm">099999999</span>
-                </div>
-                <div class="py-2 space-x-1 ">           
-                    <i class="fas fa-map-marker-alt h-6 w-6"></i><span class="text-sm">Batangas City</span>
-                </div>
+    <div class="container flex flex-col pl-14 mt-10 md:flex-row mx-auto justify-around lg:col-span-3"><!-- c lg:col-span-3 -->
+        <div class="text-white font-light my-5 md:my-0 lg:pl-5">
+            <h1 class="font-normal text-xl my-3">Contacts</h1>
+            <div class="py-2 space-x-1">           
+                <i class="fab fa-google h-6 w-6"></i><span class="text-sm">lo-go@gmail.com</span>
             </div>
-            <div class="text-white font-light">
-                <h1 class="font-normal text-xl my-3">Categories</h1>
-                <div class="grid grid-cols-3 gap-3 text-xs mt-5 text-left w-50">
-                    <a href="">Men</a>
-                    <a href="">Women</a>
-                    <a href="">Kids</a>
-                    <a href="">Bags</a>
-                    <a href="">Clothes</a>
-                    <a href="">Shorts</a>
-                    <a href="">Eyeglass</a>
-                    <a href="">Shoes</a>
-                </div>  
+            <div class="py-2 space-x-1">           
+                <i class="fas fa-phone h-6 w-6"></i><span class="text-sm">099999999</span>
             </div>
-            <div class="text-white font-light">
-                <h1 class="font-normal text-xl my-3">Social Medias</h1>
-                <div class="grid grid-cols-3 gap-1 md:gap-3 text-xs mt-5 text-left w-50">
-                    <i class="fab fa-facebook text-2xl mr-3 "></i>
-                    <i class="fab fa-instagram text-2xl mr-3"></i>
-                    <i class="fab fa-twitter text-2xl "></i>
-                </div>  
+            <div class="py-2 space-x-1 ">           
+                <i class="fas fa-map-marker-alt h-6 w-6"></i><span class="text-sm">Batangas City</span>
             </div>
-          <!--   <div class="text-white text-left">
-                <h1 class="font-normal text-xl my-4 lg:my-0">Social Medias</h1>
+        </div>
+        <div class="text-white font-light my-5 md:my-0 ">
+            <h1 class="font-normal text-xl my-3">Categories</h1>
+            <div class="grid grid-cols-3 gap-3 text-xs mt-5 text-left w-50">
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Bags</a>
+                <a href="">Clothes</a>
+                <a href="">Shorts</a>
+                <a href="">Eyeglass</a>
+                <a href="">Shoes</a>
+            </div>  
+        </div>
+        <div class="text-white font-light my-5 md:my-0 ">
+            <h1 class="font-normal text-xl my-3">Social Medias</h1>
+            <div class="grid grid-cols-3 gap-1 md:gap-3 text-xs mt-5 text-left w-50">
                 <i class="fab fa-facebook text-2xl mr-3 "></i>
                 <i class="fab fa-instagram text-2xl mr-3"></i>
                 <i class="fab fa-twitter text-2xl "></i>
-            </div> -->
+            </div>  
         </div>
+      <!--   <div class="text-white text-left">
+            <h1 class="font-normal text-xl my-4 lg:my-0">Social Medias</h1>
+            <i class="fab fa-facebook text-2xl mr-3 "></i>
+            <i class="fab fa-instagram text-2xl mr-3"></i>
+            <i class="fab fa-twitter text-2xl "></i>
+        </div> -->
     </div>
-    <!-- FOOTER -->
+</div>
+<!-- FOOTER -->
+    <script>
+        const btn = document.querySelector('button.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+    
+        btn.addEventListener("click",()=>{
+            menu.classList.toggle("hidden");
+        })
+    </script>
 </body>
 </html>
+
+
+<!-- <div class="container flex flex-col pl-14 mt-10 md:flex-row mx-auto justify-around lg:col-span-3">
+        <h1 class="font-normal text-xl my-3">Contacts</h1>
+        <div class="py-2 space-x-1">           
+            <i class="fab fa-google h-6 w-6"></i><span class="text-sm">lo-go@gmail.com</span>
+        </div>
+        <div class="py-2 space-x-1">           
+            <i class="fas fa-phone h-6 w-6"></i><span class="text-sm">099999999</span>
+        </div>
+        <div class="py-2 space-x-1 ">           
+            <i class="fas fa-map-marker-alt h-6 w-6"></i><span class="text-sm">Batangas City</span>
+        </div>
+    </div>
+    <div class="text-white font-light">
+        <h1 class="font-normal text-xl my-3">Categories</h1>
+        <div class="grid grid-cols-3 gap-3 text-xs mt-5 text-left w-50">
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Bags</a>
+            <a href="">Clothes</a>
+            <a href="">Shorts</a>
+            <a href="">Eyeglass</a>
+            <a href="">Shoes</a>
+        </div>  
+    </div>
+    <div class="text-white font-light">
+        <h1 class="font-normal text-xl my-3">Social Medias</h1>
+        <div class="grid grid-cols-3 gap-1 md:gap-3 text-xs mt-5 text-left w-50">
+            <i class="fab fa-facebook text-2xl mr-3 "></i>
+            <i class="fab fa-instagram text-2xl mr-3"></i>
+            <i class="fab fa-twitter text-2xl "></i>
+        </div>  
+    </div>
+
+</div> -->
