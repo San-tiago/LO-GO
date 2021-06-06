@@ -11,21 +11,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
-<body class="overflow-x-hidden">
-    <header class="h-screen w-full relative flex justify-center">
+<body class="overflow-x-hidden font-pop max-w-full">
+    <header class="xs:h-screen max-w-full relative flex justify-center">
         <div class="px-10 fixed w-full z-40 flex justify-between py-3 bg-white">
             <div>
-                <h3 class="text-gray-700 font-bold text-2xl">LO-<span class="text-blue-500">GO</span></h3>
+                <h3 class="text-gray-700 font-bold text-2xl">LO-<span class="text-red-400">GO</span></h3>
             </div>
-            <div class="hidden md:flex space-x-16 text-xs items-center text-gray-500">
+            <div class="hidden md:flex space-x-16 text-xs items-center text-secondary">
                 <a href="" class="border-b-2 border-gray-600 py-1">Home</a>
                 <a href="" class="hover:font-bold">Shop</a>
                 <a href="" class="hover:font-bold">Contact</a>
                 <a href="" class="hover:font-bold">Cart</a>
             </div>
-            <div class="hidden md:flex space-x-16 text-xs items-center text-gray-500">
+            <div class="hidden md:flex space-x-16 text-xs items-center text-secondary">
                 <a href="">Log-in</a>
-                <a href="">Sign-up</a>
+                <a href="" class="border border-red-400 rounded-3xl px-3 py-2 hover:bg-red-400 hover:text-white">Sign-up</a>
             </div>
             <div class="flex items-center md:hidden">
                 <button class="mobile-menu-button">
@@ -35,18 +35,18 @@
                 </button>
             </div>
         </div>
-        <div class="mobile-menu py-5 fixed z-30 w-full hidden mt-10 mx-auto fixed w-full md:hidden bg-white px-12 flex flex-col text-sm text-gray-600 font-normal">
-            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Home</a>
-            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Shop</a>
-            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Contact</a>
-            <a href="" class="py-3 hover:bg-blue-500 hover:text-white hover:font-bold">Cart</a>
+        <div class="mobile-menu py-5 fixed z-40 w-full hidden mt-10 mx-auto fixed w-full md:hidden bg-white px-12 flex flex-col text-sm text-gray-600 font-normal">
+            <a href="" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold">Home</a>
+            <a href="" class="py-3 px-2  hover:bg-red-400 hover:text-white hover:font-bold">Shop</a>
+            <a href="" class="py-3 px-2  hover:bg-red-400 hover:text-white hover:font-bold">Contact</a>
+            <a href="" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold">Cart</a>
             
         </div>
-        <div class="absolute z-30 mt-64 italic tracking-widest text-white text-9xl font-light">
-            <h1 class="font-bold ">LO-<span class="text-blue-500">GO</span></h1>
-        </div>
-        <div class="max-w-full lg:container mx-auto h-4/5 md:h-5/6 absolute inset-0 z-20 mt-16 bg-black opacity-50">
-
+     
+        <div class="max-w-full relative lg:container mx-auto h-4/5 md:h-5/6 absolute inset-0 z-20 mt-16">
+            <div class="max-w-full h-full z-40 xs:text-5xl flex justify-center items-center text-8xl italic tracking-widest text-white  md:text-9xl">
+                <h1 class="font-bold font-mont">LO-<span class="text-red-400">GO</span></h1>
+            </div>
         </div>
         <div class="max-w-full lg:container mx-auto h-4/5  md:h-5/6 absolute inset-0 z-10 mt-16">
             <video src="./vid/pexels-cottonbro-5310933.mp4" type="video/mp4" autoplay muted loop class="opacity-80 object-cover w-full h-full" ></video>
@@ -62,29 +62,29 @@
         <div class="hidden col-span-0 lg:block col-span-1 px-10 py-8">
             <div class="my-2">
                 <h3 class="text-gray-600 font-medium py-5">GENDER</h3>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">All</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700 font-bold"><a href="" class="mr-5">Men</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Women</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Bi-sex</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href=""  class="mr-5">All</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary font-bold"><a href="" class="mr-5">Men</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Women</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Unisex</a><input type="checkbox"></div>
             </div> 
             <div class="my-2">
                 <h3 class="text-gray-600 font-medium py-5">CATEGORIES</h3>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">All</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Clothes</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Shorts</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Accessories</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Bags</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700 font-bold"><a href="" class="mr-5">Shoes</a><input type="checkbox"></div>
-                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-gray-700"><a href="" class="mr-5">Glasses</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">All</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Clothes</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Shorts</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Accessories</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Bags</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary font-bold"><a href="" class="mr-5">Shoes</a><input type="checkbox"></div>
+                <div class="text-xs flex justify-between w-24 py-2 mx-13 items-center text-secondary"><a href="" class="mr-5">Glasses</a><input type="checkbox"></div>
             </div> 
             <div class="my-2">
                 <h3 class="text-gray-600 font-medium py-5">SIZE</h3>
                 <div class="grid grid-cols-3 grid-rows-2">
-                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">XS</span></div>
-                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">SM</span></div>
-                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">M</span></div>
-                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">LG</span></div>
-                   <div><span class="text-xs text-gray-700 hover:bg-gray-600 p-1 hover:text-white">XL</span></div>
+                   <div><span class="text-xs text-secondary hover:bg-secondary p-1 hover:text-white">XS</span></div>
+                   <div><span class="text-xs text-secondary hover:bg-secondary p-1 hover:text-white">SM</span></div>
+                   <div><span class="text-xs text-secondary hover:bg-secondary p-1 hover:text-white">M</span></div>
+                   <div><span class="text-xs text-secondary hover:bg-secondary p-1 hover:text-white">LG</span></div>
+                   <div><span class="text-xs text-secondary hover:bg-secondary p-1 hover:text-white">XL</span></div>
                 </div>
             </div> 
         </div>
@@ -93,11 +93,11 @@
 
     <!-- PRODUCTS -->
 
-        <div class="container px-0 lg:col-span-3 px-2">
+        <div class="container px-0 lg:col-span-3 px-2 overflow-x-hidden">
             <div class="container border-b-2 pb-6">
                 <div class="container flex flex-col md:flex-row">
-                    <div class="mx-auto text-gray-600 text-xl my-2 md:my-0"><h1>Products</h1></div>
-                    <div class="mx-auto flex space-x-10 text-xs text-gray-600 my-2 md:items-center my-0">
+                    <div class="mx-auto text-gray-600 text-xl my-2 md:my-0"><h1 class="text-primary">Products</h1></div>
+                    <div class="text-primary mx-auto flex space-x-10 text-xs my-2 md:items-center my-0">
                         <div class="lg:hidden"><span class="text-xs">GENDER</span>
                             <select name="" id="">
                                 <option value="">All</option>
@@ -131,7 +131,7 @@
                      
                     </div>
                     <div class="flex mx-auto my-2 md:my-0">
-                        <input type="text" name="" id="" class="border border-gray-600 text-gray-600 text-xs p-1 focus:outline-none" placeholder="Search ..."><div class="bg-black flex justify-center items-center w-8">
+                        <input type="text" name="" id="" class="border border-gray-600 text-gray-600 text-xs p-1 focus:outline-none" placeholder="Search ..."><div class="bg-primary flex justify-center items-center w-8">
                             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                             <path d="M16.2595 15.989L12.895 12.6185L16.2595 15.989ZM14.7595 8.11401C14.7595 9.80477 14.0879 11.4263 12.8923 12.6218C11.6968 13.8174 10.0753 14.489 8.38452 14.489C6.69377 14.489 5.07226 13.8174 3.87672 12.6218C2.68117 11.4263 2.00952 9.80477 2.00952 8.11401C2.00952 6.42326 2.68117 4.80175 3.87672 3.60621C5.07226 2.41066 6.69377 1.73901 8.38452 1.73901C10.0753 1.73901 11.6968 2.41066 12.8923 3.60621C14.0879 4.80175 14.7595 6.42326 14.7595 8.11401V8.11401Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -153,13 +153,13 @@
 
             <div class=" flex flex-col">
                 <!-- SHOES -->
-                <div class="slider owl-carousel">
+                <div class="slider owl-carousel overflow-x-hidden">
                      <div class="mx-auto w-9/12 h-full mt-20 bg-green-50 hover:bg-green-100">
                        <a href="./dist/product.html"><img src="./dist/img/revolution-5-running-shoe-8P3bh3.png" alt="" class="w-full object-cover"></a> 
                         <div class="flex justify-between p-7 bg-white">
                             <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                    <p class="text-sm font-bold text-xs">$10</p>
+                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
+                                    <p class="text-sm text-secondary">$10</p>
                             </div>
                             <div class="flex items-center">
                                 
@@ -173,8 +173,8 @@
                         <a href="./dist/product.html"><img src="./dist/img/34f361b17de849262477dfbc4a5d8407.png" alt="" class="w-full object-cover"> </a>
                         <div class="flex justify-between p-7 bg-white"">
                             <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                    <p class="text-sm font-bold text-xs">$10</p>
+                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
+                                    <p class="text-sm text-secondary">$10</p>
                             </div>
                             <div class="flex items-center">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,8 +187,8 @@
                         <a href=""><img src="./dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full object-cover"></a>
                         <div class="flex justify-between p-7 bg-white"">
                             <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                    <p class="text-sm font-bold text-xs">$10</p>
+                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
+                                    <p class="text-sm text-secondary">$10</p>
                             </div>
                             <div class="flex items-center">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,8 +210,8 @@
                        <a href="./dist/product.html"><img src="./dist/img/HTB1mhtvA9tYBeNjSspk762U8VXac.png" alt="" class="w-full object-cover"></a> 
                         <div class="flex justify-between p-7 bg-white">
                             <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                    <p class="text-sm font-bold text-xs">$10</p>
+                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
+                                    <p class="text-sm text-secondary">$10</p>
                             </div>
                             <div class="flex items-center">
                                 
@@ -225,8 +225,8 @@
                         <a href="./dist/product.html"><img src="./dist/img/a0072979e61abb7f3d0593bdafe8997c.png" alt="" class="w-full object-cover"> </a>
                         <div class="flex justify-between p-7 bg-white"">
                             <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                    <p class="text-sm font-bold text-xs">$10</p>
+                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
+                                    <p class="text-sm text-secondary">$10</p>
                             </div>
                             <div class="flex items-center">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,8 +239,8 @@
                         <a href=""><img src="./dist/img/Men-Multifunction-Anti-Theft-Backpack-15-6-Inch-Laptop-Backpacks-Waterproof-Schoolbag-Business-Travel-Bags-Teenage.png" alt="" class="w-full object-cover"></a>
                         <div class="flex justify-between p-7 bg-white"">
                             <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                    <p class="text-sm font-bold text-xs">$10</p>
+                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
+                                    <p class="text-sm text-secondary">$10</p>
                             </div>
                             <div class="flex items-center">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,7 +260,7 @@
                        <div class="flex justify-between p-7 bg-white">
                            <div class="flex flex-col w-full">
                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm font-bold text-xs">$10</p>
+                                   <p class="text-sm text-secondary">$10</p>
                            </div>
                            <div class="flex items-center">
                                
@@ -275,7 +275,7 @@
                        <div class="flex justify-between p-7 bg-white"">
                            <div class="flex flex-col w-full">
                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm font-bold text-xs">$10</p>
+                                   <p class="text-sm text-secondary">$10</p>
                            </div>
                            <div class="flex items-center">
                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,7 +289,7 @@
                        <div class="flex justify-between p-7 bg-white"">
                            <div class="flex flex-col w-full">
                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm font-bold text-xs">$10</p>
+                                   <p class="text-sm text-secondary">$10</p>
                            </div>
                            <div class="flex items-center">
                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,18 +299,18 @@
                        </div>
                    </div>
                </div>
-               <div class="my-10 flex justify-center items-center space-x-10">
-                   <div><a href="" class="w-6 h-5 text-black flex justify-center items-center"><i class="fas fa-caret-left"></i></a></div>
-                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">1</a></div>
-                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">2</a></div>
-                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">3</a></div>
-                   <div><a href="" class="primary w-6 h-5 text-white flex justify-center items-center">4</a></div>
-                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">5</a></div>
-                   <div><a href="" class=" w-6 h-5 text-black flex justify-center items-center">6</a></div>
-                   <div><a href="" class="w-6 h-5 text-black flex justify-center items-center">7</a></div>
-                   <div><a href="" class="w-6 h-5 text-black flex justify-center items-center"><i class="fas fa-caret-right"></i></a></div>
+             <!--   <div class="mx:w-1/2 my-10 flex justify-center items-center space-x-10">
+                   <div><a href="" class="w-6 h-5 text-primary flex justify-center items-center"><i class="fas fa-caret-left"></i></a></div>
+                   <div><a href="" class=" w-6 h-5 text-secondary flex justify-center items-center">1</a></div>
+                   <div><a href="" class=" w-6 h-5 text-secondary flex justify-center items-center">2</a></div>
+                   <div><a href="" class=" w-6 h-5 text-secondary flex justify-center items-center">3</a></div>
+                   <div><a href="" class="bg-secondary w-6 h-5 text-white flex justify-center items-center">4</a></div>
+                   <div><a href="" class=" w-6 h-5 text-secondary flex justify-center items-center">5</a></div>
+                   <div><a href="" class=" w-6 h-5 text-secondary flex justify-center items-center">6</a></div>
+                   <div><a href="" class="w-6 h-5 text-secondary flex justify-center items-center">7</a></div>
+                   <div><a href="" class="w-6 h-5 text-primary flex justify-center items-center"><i class="fas fa-caret-right"></i></a></div>
 
-               </div>
+               </div> -->
                 
              <!-- EACH PRODUCT -->     
         </div>
@@ -320,9 +320,9 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="py-20 primary max-w-full h-auto flex md:flex flex-col lg:grid grid-cols-4 mt-56 lg:py-10">
+    <div class="py-20 bg-primary max-w-full h-auto flex md:flex flex-col lg:grid grid-cols-4 mt-56 lg:py-10">
         <div class="text-center md:col-span-2 flex justify-center items-center lg:col-span-1">
-            <h1 class="text-white text-5xl font-bold">LO-<span class="text-blue-500">GO</span></h1>
+            <h1 class="text-white text-5xl font-bold">LO-<span class="text-red-400">GO</span></h1>
         </div>
 
         <div class="container flex flex-col pl-14 mt-10 md:flex-row mx-auto justify-around lg:col-span-3"><!-- c lg:col-span-3 -->
