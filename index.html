@@ -11,11 +11,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
-<body class="overflow-x-hidden font-pop max-w-full">
+<body class="overflow-x-hidden relative font-pop max-w-full">
+    
     <header class="xs:h-screen max-w-full relative flex justify-center">
         <div class="px-10 fixed w-full z-40 flex justify-between py-3 bg-white">
             <div>
-                <h3 class="text-gray-700 font-bold text-2xl">LO-<span class="text-red-400">GO</span></h3>
+                <h3 class="text-gray-700 font-bold text-2xl">Lo-<span class="text-red-400">Go</span></h3>
             </div>
             <div class="hidden md:flex space-x-16 text-xs items-center text-secondary">
                 <a href="" class="border-b-2 border-gray-600 py-1">Home</a>
@@ -24,8 +25,8 @@
                 <a href="" class="hover:font-bold">Cart</a>
             </div>
             <div class="hidden md:flex space-x-16 text-xs items-center text-secondary">
-                <a href="">Log-in</a>
-                <a href="" class="border border-red-400 rounded-3xl px-3 py-2 hover:bg-red-400 hover:text-white hover:font-bold">Sign-up</a>
+                <a href="#" class="text-red-400" id="login">Log-in</a>
+                <a href="#" class="border border-red-400 rounded-3xl px-3 py-2 hover:bg-red-400 hover:text-white hover:font-bold" id="signin">Sign-up</a>
             </div>
             <div class="flex items-center md:hidden">
                 <button class="mobile-menu-button">
@@ -45,7 +46,7 @@
      
         <div class="max-w-full relative lg:container mx-auto h-4/5 md:h-5/6 absolute inset-0 z-20 mt-16">
             <div class="max-w-full h-full z-40 xs:text-6xl flex justify-center items-center text-8xl italic tracking-widest text-white  md:text-9xl">
-                <h1 class="font-bold font-mont animate-pulse">LO-<span class="text-red-400">GO</span></h1>
+                <h1 class="font-bold font-mont animate-pulse">Lo-<span class="text-red-400">Go</span></h1>
             </div>
         </div>
         <div class="max-w-full lg:container mx-auto h-4/5  md:h-5/6 absolute inset-0 z-10 mt-16">
@@ -54,7 +55,7 @@
         </div>
     </header>
 
-    
+   
 
     <div class="container mx-auto grid-cols-3 lg:grid grid-cols-4">
 
@@ -151,101 +152,72 @@
 
             <!-- EACH PRODUCT -->    
 
-            <div class="max-w-fu flex flex-col">
+            <div class="max-w-full flex flex-col">
                 <!-- SHOES -->
                 <div class="max-w-full slider owl-carousel overflow-x-hidden">
-                     <div class="mx-auto w-9/12 h-full mt-20 bg-green-50 hover:bg-green-100">
-                       <a href="./dist/product.html"><img src="./dist/img/revolution-5-running-shoe-8P3bh3.png" alt="" class="w-full object-cover"></a> 
-                        <div class="flex justify-between p-7 bg-white">
-                            <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
-                                    <p class="text-sm text-secondary">$10</p>
-                            </div>
-                            <div class="flex items-center">
-                                
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                                </svg>                                    
+                    <a href="./dist/axd123.html" target="_blank">
+                        <div class="mx-auto w-11/12 h-full mt-20 bg-green-50 hover:bg-green-100">
+                        <img src="./dist/img/revolution-5-running-shoe-8P3bh3.png" alt="" class="w-full object-cover">
+                            <div class="flex justify-between p-7 bg-white">
+                                <div class="flex flex-col w-full">
+                                        <h1 class="text-gray-600 uppercase text-xs my-2 font-mont xs:text-xs">AXD123</h1>
+                                        <p class="text-sm text-secondary font-medium xs:text-xs">$10</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                     <div class="mx-auto w-9/12 h-full mt-20 bg-blue-50 hover:bg-blue-100"">
-                        <a href="./dist/product.html"><img src="./dist/img/34f361b17de849262477dfbc4a5d8407.png" alt="" class="w-full object-cover"> </a>
-                        <div class="flex justify-between p-7 bg-white"">
-                            <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
-                                    <p class="text-sm text-secondary">$10</p>
-                            </div>
-                            <div class="flex items-center">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                                </svg>                                    
+                    </a> 
+                    <a href="./dist/white.html"target="_blank">
+                        <div class="mx-auto w-11/12 h-full mt-20 bg-blue-50 hover:bg-blue-100"">
+                        <img src="./dist/img/34f361b17de849262477dfbc4a5d8407.png" alt="" class="w-full object-cover"> 
+                            <div class="flex justify-between p-7 bg-white"">
+                                <div class="flex flex-col w-full">
+                                        <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">White XD</h1>
+                                        <p class="text-sm text-secondary font-medium ">$10</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                     <div class="mx-auto w-9/12 h-full mt-20 bg-yellow-50 hover:bg-yellow-100"">
-                        <a href=""><img src="./dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full object-cover"></a>
-                        <div class="flex justify-between p-7 bg-white"">
-                            <div class="flex flex-col w-full">
-                                    <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
-                                    <p class="text-sm text-secondary">$10</p>
-                            </div>
-                            <div class="flex items-center">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                                </svg>                                    
+                    </a>
+                    <a href="./dist/product.html" target="_blank">
+                        <div class="mx-auto w-11/12 h-full mt-20 bg-yellow-50 hover:bg-yellow-100"">
+                         <img src="./dist/img/joyride-dual-run-running-shoe-l272g9.png" alt="" class="w-full object-cover">
+                            <div class="flex justify-between p-7 bg-white"">
+                                <div class="flex flex-col w-full">
+                                        <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">DDR9</h1>
+                                        <p class="text-sm text-secondary font-medium ">$10</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                   
-                   
-               
+                    </a>
                 </div>
                 <!-- END SHOES -->
 
 
                 <!-- BAGS -->
                 <div class="slider owl-carousel">
-                     <div class="mx-auto w-9/12 h-full mt-20 bg-green-50 hover:bg-green-100">
+                     <div class="mx-auto w-11/12 h-full mt-20 bg-green-50 hover:bg-green-100">
                        <a href="./dist/product.html"><img src="./dist/img/HTB1mhtvA9tYBeNjSspk762U8VXac.png" alt="" class="w-full object-cover"></a> 
                         <div class="flex justify-between p-7 bg-white">
                             <div class="flex flex-col w-full">
                                     <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
-                                    <p class="text-sm text-secondary">$10</p>
-                            </div>
-                            <div class="flex items-center">
-                                
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                                </svg>                                    
+                                    <p class="text-sm text-secondary font-medium ">$10</p>
                             </div>
                         </div>
                     </div>
-                     <div class="mx-auto w-9/12 h-full mt-20 bg-blue-100 hover:bg-blue-200"">
+                     <div class="mx-auto w-11/12 h-full mt-20 bg-blue-100 hover:bg-blue-200"">
                         <a href="./dist/product.html"><img src="./dist/img/a0072979e61abb7f3d0593bdafe8997c.png" alt="" class="w-full object-cover"> </a>
                         <div class="flex justify-between p-7 bg-white"">
                             <div class="flex flex-col w-full">
                                     <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
-                                    <p class="text-sm text-secondary">$10</p>
-                            </div>
-                            <div class="flex items-center">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                                </svg>                                    
+                                    <p class="text-sm text-secondary font-medium ">$10</p>
                             </div>
                         </div>
                     </div>
-                     <div class="mx-auto w-9/12 h-full mt-20 bg-indigo-50 hover:bg-indigi-100"">
+                     <div class="mx-auto w-11/12 h-full mt-20 bg-indigo-50 hover:bg-indigi-100"">
                         <a href=""><img src="./dist/img/Men-Multifunction-Anti-Theft-Backpack-15-6-Inch-Laptop-Backpacks-Waterproof-Schoolbag-Business-Travel-Bags-Teenage.png" alt="" class="w-full object-cover"></a>
                         <div class="flex justify-between p-7 bg-white"">
                             <div class="flex flex-col w-full">
                                     <h1 class="text-gray-600 uppercase text-xs my-2 font-mont">Lorem</h1>
-                                    <p class="text-sm text-secondary">$10</p>
-                            </div>
-                            <div class="flex items-center">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                                </svg>                                    
+                                    <p class="text-sm text-secondary font-medium ">$10</p>
                             </div>
                         </div>
                     </div>
@@ -260,7 +232,7 @@
                        <div class="flex justify-between p-7 bg-white">
                            <div class="flex flex-col w-full">
                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm text-secondary">$10</p>
+                                   <p class="text-sm text-secondary font-medium ">$10</p>
                            </div>
                            <div class="flex items-center">
                                
@@ -275,7 +247,7 @@
                        <div class="flex justify-between p-7 bg-white"">
                            <div class="flex flex-col w-full">
                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm text-secondary">$10</p>
+                                   <p class="text-sm text-secondary font-medium ">$10</p>
                            </div>
                            <div class="flex items-center">
                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,7 +261,7 @@
                        <div class="flex justify-between p-7 bg-white"">
                            <div class="flex flex-col w-full">
                                    <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm text-secondary">$10</p>
+                                   <p class="text-sm text-secondary font-medium ">$10</p>
                            </div>
                            <div class="flex items-center">
                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -322,7 +294,7 @@
     <!-- FOOTER -->
     <div class="py-20 bg-primary max-w-full h-auto flex md:flex flex-col lg:grid grid-cols-4 mt-56 lg:py-10">
         <div class="text-center md:col-span-2 flex justify-center items-center lg:col-span-1">
-            <h1 class="text-white text-5xl font-bold">LO-<span class="text-red-400">GO</span></h1>
+            <h1 class="text-white text-5xl font-bold">Lo-<span class="text-red-400">Go</span></h1>
         </div>
 
         <div class="container flex flex-col pl-14 mt-10 md:flex-row mx-auto justify-around lg:col-span-3"><!-- c lg:col-span-3 -->
@@ -369,13 +341,105 @@
     </div>
     <!-- FOOTER -->
 
+
+    <div class="hidden h-screen flex sticky inset-0 z-50 justify-center items-center bg-black bg-opacity-70 fixed" id="modal">
+        <div class="w-3/4 h-5/6 bg-white flex flex-row rounded-2xl" id="layer">
+                <div class="w-1/2 flex justify-center items-center bg-red-50 rounded-l-2xl">
+                    <h3 class="text-gray-700 font-bold text-7xl">LO-<span class="text-red-400">GO</span></h3>
+                    <div>
+                    </div>
+                </div>
+                 <div class="w-1/2 h-full">
+                    <div class="max-w-full flex justify-end items-center px-5 py-4">
+                        <a class="close-modal text-secondary text-xl font-bold px-3 cursor-pointer" id="close-modal">X</a>
+                    </div>
+                    <div class="flex justify-center items-center text-2xl text-secondary font-semibold">
+                        <h1>Create Account</h1>
+                    </div>
+                    <div class="flex w-8/12 mx-auto justify-center items-center my-5">
+                       <div class="max-w-full text-sm mx-auto">
+                            <div class="space-x-5 my-5 max-w-full"><input type="text" name="" id="" class="w-80 px-4 py-2 border border-gray-100 outline-none" placeholder="First Name"></div>
+                            <div class="space-x-5 my-5 max-w-full"><input type="text" name="" id="" class="w-80 px-4 py-2 border border-gray-100 outline-none" placeholder="Middle Name"></div>
+                            <div class="space-x-5 my-5 max-w-full"><input type="text" name="" id="" class="w-80 px-4 py-2 border border-gray-100 outline-none" placeholder="Last Name"></div>
+                            <div class="space-x-5 my-5 max-w-full"><input type="text" name="" id="" class="w-80 px-4 py-2 border border-gray-100 outline-none " placeholder="Email"></div>
+                       </div>
+                    </div>
+                    <div class=" container flex justify-center items-center text-3xl space-x-12 my-7">
+                        <i class="fab fa-facebook text-secondary hover:text-red-400"></i>
+                        <i class="fab fa-google text-secondary hover:text-red-400"></i>
+                        <i class="fab fa-twitter text-secondary hover:text-red-400"></i>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full hover:bg-red-400 hover:text-white">REGISTER</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div class="hidden h-screen flex sticky inset-0 z-50 justify-center items-center bg-black bg-opacity-70 fixed" id="loginmodal">
+        <div class="bg-white p-8 rounded-2xl max-w-1/2 max-h-5/6 ">
+
+                    <div class="flex justify-center items-center text-2xl text-secondary font-semibold">
+                        <h3 class="text-gray-700 font-bold text-4xl">LO-<span class="text-red-400">GO</span></h3>
+
+                    </div>
+                    <div class="flex w-8/12 mx-auto justify-center items-center my-10">
+                       <div class="max-w-full text-sm mx-auto">
+                            <div class="space-x-5 my-5 max-w-full"><input type="text" name="" id="" class="max-w-90 px-4 py-2 border border-gray-100 outline-none" placeholder="Email"></div>
+                            <div class="space-x-5 my-5 max-w-full"><input type="text" name="" id="" class="max-w-90 px-4 py-2 border border-gray-100 outline-none" placeholder="Password"></div>
+                          
+                       </div>
+                    </div>
+                    <div class=" container flex mx-auto justify-center items-center text-3xl space-x-8 my-8">
+                        <i class="fab fa-facebook text-secondary hover:text-red-400"></i>
+                        <i class="fab fa-google text-secondary hover:text-red-400"></i>
+                        <i class="fab fa-twitter text-secondary hover:text-red-400"></i>
+                    </div>
+                    <div class="max-w-full mx-4 flex justify-center items-center my-5">
+                        <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full hover:bg-red-400 hover:text-white">LOG-IN</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <button class="px-7 py-2 w-80 border border-secondary text-primary text-sm rounded-full hover:bg-primary hover:text-white" id="closelogin">CLOSE</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
     <script>
+        const openlogin = document.getElementById('login');
+        const loginmodal = document.getElementById('loginmodal');
+        const closelogin = document.getElementById('closelogin');
+
+
+        const openmodal = document.getElementById('signin');
+        const closemodal = document.getElementById('close-modal');
+        const modal = document.getElementById('modal');
+
         const btn = document.querySelector('button.mobile-menu-button');
         const menu = document.querySelector('.mobile-menu');
     
         btn.addEventListener("click",()=>{
             menu.classList.toggle("hidden");
         })
+
+        openmodal.addEventListener("click",()=>{
+            modal.classList.remove("hidden");
+        })
+        
+        closemodal.addEventListener("click",()=>{
+            modal.classList.add("hidden");
+        })
+
+
+        closelogin.addEventListener("click",()=>{
+            loginmodal.classList.add("hidden");
+        })
+
+        openlogin.addEventListener("click",()=>{
+            loginmodal.classList.remove("hidden");
+        })
+        console.log(openmodal)
     </script>
     <script>
         $(".slider").owlCarousel({
@@ -397,5 +461,7 @@
             }
         })
     </script>
+
+    
 </body>
 </html>
