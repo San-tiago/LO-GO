@@ -41,7 +41,8 @@
             <a href="" class="py-3 px-2  hover:bg-red-400 hover:text-white hover:font-bold">Shop</a>
             <a href="" class="py-3 px-2  hover:bg-red-400 hover:text-white hover:font-bold">Contact</a>
             <a href="" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold">Cart</a>
-            
+            <a href="#" class="py-3 px-2 hover:bg-red-400 hover:text-white hover:font-bold" id="smlogin">Log-in</a>
+            <a href="#" class="py-3 px-2 rounded-2xl hover:bg-red-400 hover:text-white hover:font-bold" id="smsignin">Sign-up</a>
         </div>
      
         <div class="max-w-full relative lg:container mx-auto h-4/5 md:h-5/6 absolute inset-0 z-20 mt-16">
@@ -225,52 +226,6 @@
                 <!-- END SHOES -->
 
               
-                  <!-- SHIRTS -->
-                  <div class="slider owl-carousel">
-                    <div class="mx-auto w-9/12 h-full mt-20 bg-green-50 hover:bg-green-100">
-                      <a href="./dist/product.html"><img src="./dist/img/blacktshirt.png" alt="" class="w-full object-cover"></a> 
-                       <div class="flex justify-between p-7 bg-white">
-                           <div class="flex flex-col w-full">
-                                   <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm text-secondary font-medium ">$10</p>
-                           </div>
-                           <div class="flex items-center">
-                               
-                               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                               </svg>                                    
-                           </div>
-                       </div>
-                   </div>
-                    <div class="mx-auto w-9/12 h-full mt-20 bg-blue-100 hover:bg-blue-200"">
-                       <a href="./dist/product.html"><img src="./dist/img/bluetshirt.png" alt="" class="w-full object-cover"> </a>
-                       <div class="flex justify-between p-7 bg-white"">
-                           <div class="flex flex-col w-full">
-                                   <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm text-secondary font-medium ">$10</p>
-                           </div>
-                           <div class="flex items-center">
-                               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                               </svg>                                    
-                           </div>
-                       </div>
-                   </div>
-                    <div class="mx-auto w-9/12 h-full mt-20 bg-indigo-50 hover:bg-indigi-100"">
-                       <a href=""><img src="./dist/img/organictshirt.png" alt="" class="w-full object-cover"></a>
-                       <div class="flex justify-between p-7 bg-white"">
-                           <div class="flex flex-col w-full">
-                                   <h1 class="text-gray-600 uppercase text-xs my-2">Lorem</h1>
-                                   <p class="text-sm text-secondary font-medium ">$10</p>
-                           </div>
-                           <div class="flex items-center">
-                               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15.4252 14.6092H5.75858M15.4252 24.2758V14.6092V24.2758ZM15.4252 14.6092V4.9425V14.6092ZM15.4252 14.6092H25.0919H15.4252Z" stroke="#505050" stroke-width="2" stroke-linecap="round"/>
-                               </svg>                                    
-                           </div>
-                       </div>
-                   </div>
-               </div>
              <!--   <div class="mx:w-1/2 my-10 flex justify-center items-center space-x-10">
                    <div><a href="" class="w-6 h-5 text-primary flex justify-center items-center"><i class="fas fa-caret-left"></i></a></div>
                    <div><a href="" class=" w-6 h-5 text-secondary flex justify-center items-center">1</a></div>
@@ -361,7 +316,7 @@
                         <i class="fab fa-twitter text-secondary hover:text-red-400"></i>
                     </div>
                     <div class="max-w-full mx-4 flex justify-center items-center my-5">
-                        <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full hover:bg-red-400 hover:text-white">REGISTER</button>
+                        <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full bg-red-400 text-white">REGISTER</button>
                     </div>
                     <div class="max-w-full mx-4 flex justify-center items-center my-5">
                         <button class="px-7 py-2 w-80 border border-secondary text-primary text-sm rounded-full hover:bg-primary hover:text-white" id="close-signin">CLOSE</button>
@@ -375,7 +330,7 @@
 
     <!-- LOGIN MODAL -->
     <div class="hidden h-screen flex sticky inset-0 z-50 justify-center items-center bg-black bg-opacity-70 fixed" id="loginmodal">
-        <div class="bg-white p-8 rounded-2xl w-80 max-h-5/6 sm:w-1/2">
+        <div class="bg-white py-10 rounded-2xl w-80 max-h-5/6 sm:w-1/2">
                     <div class="flex justify-center items-center text-2xl text-secondary font-semibold">
                         <h3 class="text-gray-700 font-bold text-4xl">LO-<span class="text-red-400">GO</span></h3>
                     </div>
@@ -390,7 +345,7 @@
                         <i class="fab fa-twitter text-secondary hover:text-red-400"></i>
                     </div>
                     <div class="max-w-full mx-4 flex justify-center items-center my-5">
-                        <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full hover:bg-red-400 hover:text-white">LOG-IN</button>
+                        <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full bg-red-400 text-white">LOG-IN</button>
                     </div>
                     <div class="max-w-full mx-4 flex justify-center items-center my-5">
                         <button class="px-7 py-2 w-80 border border-secondary text-primary text-sm rounded-full hover:bg-primary hover:text-white" id="closelogin">CLOSE</button>
@@ -403,6 +358,9 @@
     </div>
 
     <script>
+        const smlogin = document.getElementById('smlogin');
+        const smopenmodal = document.getElementById('smsignin');
+
         const openlogin = document.getElementById('login');
         const loginmodal = document.getElementById('loginmodal');
         const closelogin = document.getElementById('closelogin');
@@ -420,6 +378,9 @@
             menu.classList.toggle("hidden");
         })
 
+        smopenmodal.addEventListener("click",()=>{
+            modal.classList.remove("hidden");
+        })
         openmodal.addEventListener("click",()=>{
             modal.classList.remove("hidden");
         })
@@ -434,6 +395,9 @@
             loginmodal.classList.add("hidden");
         })
 
+        smlogin.addEventListener("click",()=>{
+            loginmodal.classList.remove("hidden");
+        })
         openlogin.addEventListener("click",()=>{
             loginmodal.classList.remove("hidden");
         })
