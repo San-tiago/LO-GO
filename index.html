@@ -342,39 +342,34 @@
     <!-- FOOTER -->
 
 
-    <div class="h-screen max-w-full flex sticky inset-0 z-50 justify-center items-center bg-black bg-opacity-70 fixed" id="modal">
-        <div class="absolute inset-0 max-w-full xs:m-5 xs:m h-full bg-white flex flex-col rounded-2xl mx-auto lg:max-w-7xl lg:flex-row h-5/6 mx-10 my-5"> <!--   <div class="absolute inset-0 max-w-full h-screen bg-white flex flex-col rounded-2xl mx-auto lg:flex-row h-5/6" id="layer"> -->
 
-                <div class="w-1/2 items-center bg-red-50 rounded-l-2xl hidden lg:flex justify-center ">
-                    <h3 class="text-gray-700 font-bold sm:text-7xl">LO-<span class="text-red-400">GO</span></h3>
-                    <div>
+     <!-- register MODAL -->
+     <div class="hidden h-screen flex sticky inset-0 z-50 justify-center items-center bg-black bg-opacity-70 fixed" id="modal">
+        <div class="bg-white p-8 rounded-2xl w-80 max-h-5/6 sm:w-1/2 md:max-w-96">
+                    <div class="flex justify-center items-center text-2xl text-secondary font-semibold">
+                        <h3 class="text-gray-700 font-bold text-4xl">LO-<span class="text-red-400">GO</span></h3>
                     </div>
-                </div>
-                 <div class="w-1/2 max-h-full xs:mx-auto pt-10 lg:mt-0">
-                    <div class="max-w-full items-center px-5 py-4 hidden lg:flex justify-end">
-                        <a class="close-modal text-secondary text-xl font-bold px-3 cursor-pointer" id="close-modal">X</a>
+                    <div class="flex flex-col w-full mx-auto justify-center items-center my-10 space-y-5">
+                            <input type="text" name="" id="" class="sm:w-1/2 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Email">
+                            <input type="text" name="" id="" class="sm:w-1/2 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Password">
+                            <input type="text" name="" id="" class="sm:w-1/2 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Password">
+                            <input type="text" name="" id="" class="sm:w-1/2 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Password">
                     </div>
-                    <div class="flex justify-center items-center text-1xl sm:text-2xl sm:pt-10 text-secondary font-semibold ">
-                        <h1>Create Account</h1>
-                    </div>
-                    <div class="flex flex-col max-w-full mx-auto justify-center items-center my-5 space-y-5 lg:mt-16">
-                            <input type="text" name="" id="" class="sm:max-w-80 md:w-80 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="First Name">
-                            <input type="text" name="" id="" class="sm max-w-80 md:w-80 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Middle Name">
-                            <input type="text" name="" id="" class="sm:max-w-80 md:w-80 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Last Name">
-                            <input type="text" name="" id="" class="sm:max-w-80 md:w-80 px-4 py-2 border border-gray-100 outline-none text-sm" placeholder="Email">
-                    </div>
-                    <div class=" container flex justify-center items-center text-2xl sm:text-3xl space-x-12 my-7">
+                    <div class=" container flex mx-auto justify-center items-center xs:text-2xl space-x-8 my-8 md:text-3xl ">
                         <i class="fab fa-facebook text-secondary hover:text-red-400"></i>
                         <i class="fab fa-google text-secondary hover:text-red-400"></i>
                         <i class="fab fa-twitter text-secondary hover:text-red-400"></i>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div class="max-w-full mx-4 flex justify-center items-center my-5">
                         <button class="px-7 py-2 w-80 border border-red-400 text-primary text-sm rounded-full hover:bg-red-400 hover:text-white">REGISTER</button>
                     </div>
-                    <div class="flex justify-center items-center lg:hidden my-5">
-                        <button class="px-7 py-2 w-80 border border-primary text-primary text-sm rounded-full hover:bg-primary hover:text-white" id="close-modalbtn">CLOSE</button>
+                    <div class="max-w-full mx-4 flex justify-center items-center my-5">
+                        <button class="px-7 py-2 w-80 border border-secondary text-primary text-sm rounded-full hover:bg-primary hover:text-white" id="close-signin">CLOSE</button>
                     </div>
-                </div>
+                   <!--  <div class="flex max-w-full justify-center items-center">
+                        <button class="px-7 py-2 w-80 border border-secondary text-primary text-sm rounded-full hover:bg-primary hover:text-white" id="closelogin">CLOSE</button>
+                    </div> -->
+        </div>
         </div>
     </div>
 
@@ -415,7 +410,7 @@
 
         const openmodal = document.getElementById('signin');
         const closemodal = document.getElementById('close-modal');
-        const closemodalbtn = document.getElementById('close-modalbtn');
+        const closesignin = document.getElementById('close-signin');
         const modal = document.getElementById('modal');
 
         const btn = document.querySelector('button.mobile-menu-button');
@@ -429,10 +424,8 @@
             modal.classList.remove("hidden");
         })
         
-        closemodal.addEventListener("click",()=>{
-            modal.classList.add("hidden");
-        })
-        closemodalbtn.addEventListener("click",()=>{
+       
+        closesignin.addEventListener("click",()=>{
             modal.classList.add("hidden");
         })
 
